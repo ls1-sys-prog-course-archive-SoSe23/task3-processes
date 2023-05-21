@@ -57,7 +57,7 @@ def main() -> None:
         )
         assert (
             proc.returncode == 0
-        ), f"expected exit to terminate with exit code 1, got: {proc.returncode}"
+        ), f"expected exit to terminate with exit code 0, got: {proc.returncode}"
         info("OK")
 
     with tempfile.TemporaryDirectory() as dir:
